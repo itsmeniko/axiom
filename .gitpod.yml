@@ -6,7 +6,7 @@ vscode:
 
 tasks:
   - name: Run Axiom Configure
-    init: |
+    command: |
       bash interact/axiom-configure --config "{\"do_key":"${DO_TOKEN}\",\"region\":\"sfo3\",\"provider\":\"do\",\"default_size\":\"s-1vcpu-1gb\"}" --unattended --shell bash
       source ~/.bashrc
       rm -vf ~/.axiom/accounts/do.json.example
